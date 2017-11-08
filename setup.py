@@ -385,7 +385,7 @@ class build(_build):
 
     def run(self):
         try:
-            self.checkout_v8()
+#             self.checkout_v8() #google code has shut down - do not try to update /checkout from there; user needs to set V8_HOME manually
             self.check_scons()
             self.build_v8()
         except Exception, e:
